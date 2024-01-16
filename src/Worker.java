@@ -12,6 +12,6 @@ public class Worker extends Person{
 
     @Override
     public String toString() {
-        return super.toString() + "Company: " + company;
+        return super.toString() + " Company: " + company;
     }
 }
