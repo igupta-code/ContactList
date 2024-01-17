@@ -56,7 +56,7 @@ public class ContactList {
                 }
             }
         }
-        if(sortBy == 1){
+        else if(sortBy == 1){
             for(int i = 0; i < contacts.size()-1; i++) {
                 for (int j = 0; j < contacts.size() - i - 1; j++) {
                     if(0 < contacts.get(i).lastName.compareTo(contacts.get(i+1).lastName)){
@@ -65,7 +65,7 @@ public class ContactList {
                 }
             }
         }
-        if(sortBy == 2){
+        else{
             for(int i = 0; i < contacts.size()-1; i++) {
                 for (int j = 0; j < contacts.size() - i - 1; j++) {
                     if(0 < contacts.get(i).phoneNumber.compareTo(contacts.get(i+1).phoneNumber)){
