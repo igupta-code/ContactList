@@ -47,27 +47,34 @@ public class ContactList {
     }
 
     public void sort(int sortBy){
-
-        for(int i = 0; i < contacts.size()-1; i++){
-            for(int j = 0; j < contacts.size() - i - 1; j++){
-                if(sortBy == 0){
-                    if(0 < contacts.get(i).firstName.compareTo(contacts.get(i+1).firstName)){
+        if(sortBy == 0){
+            for(int i = 0; i < contacts.size()-1; i++) {
+                for (int j = 0; j < contacts.size() - i - 1; j++) {
+                    if (0 < contacts.get(i).firstName.compareTo(contacts.get(i + 1).firstName)) {
                         swap(i);
                     }
                 }
-                if(sortBy == 1){
+            }
+        }
+        if(sortBy == 1){
+            for(int i = 0; i < contacts.size()-1; i++) {
+                for (int j = 0; j < contacts.size() - i - 1; j++) {
                     if(0 < contacts.get(i).lastName.compareTo(contacts.get(i+1).lastName)){
                         swap(i);
                     }
                 }
-                if(sortBy == 2){
+            }
+        }
+        if(sortBy == 2){
+            for(int i = 0; i < contacts.size()-1; i++) {
+                for (int j = 0; j < contacts.size() - i - 1; j++) {
                     if(0 < contacts.get(i).phoneNumber.compareTo(contacts.get(i+1).phoneNumber)){
                         swap(i);
                     }
                 }
-
             }
         }
+
         printContacts();
     }
 
