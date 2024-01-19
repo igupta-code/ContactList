@@ -1,3 +1,4 @@
+// Isha Gupta
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -18,7 +19,9 @@ public class ContactList {
         System.out.println("Select a type of contact to add: \n" +
                 "1. Student \n2. Worker");
         int num = input.nextInt();
+        // Add the line below to "reset" or "hit enter" for the scanner for future inputs
         input.nextLine();
+        
 
         System.out.println("Please fill in the following information");
         System.out.println("First Name:" );

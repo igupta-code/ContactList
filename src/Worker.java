@@ -1,3 +1,4 @@
+// Isha Gupta
 public class Worker extends Person{
     String company;
 
@@ -9,6 +10,7 @@ public class Worker extends Person{
     public String getCompany() {
         return company;
     }
+
 
     @Override
     public String toString() {
